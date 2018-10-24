@@ -1,0 +1,9 @@
+<p>
+  <form>
+    <input type="text" #name >
+    <br>
+    {{getValue(name.value)}}
+    <input type="button" onclick="loadMyChild()" value="Submit">
+    <app-child-component *ngIf="loadComponent" [greetMessage]="values"></app-child-component>
+  </form>
+</p>
